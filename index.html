@@ -23,10 +23,15 @@
     </p>
     <script>
         const canvas = document.getElementById("c");
+        context = canvas.getContext('2d')
         const length = window.innerWidth
         const width = window.innerHeight
         document.getElementById("p1").innerHTML = length
         document.getElementById("p2").innerHTML = width
+        context.font = "50px arial"
+        context.fillText(length, 0, 100)
+        context.fillText(width, 0, 200)
+        
     </script>
 </body>
 </html>
