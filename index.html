@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8" />
     <title>title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+    </style>
     
 </head>
 <body>
-    <p>200px square</p>
-    <div id="200" onclick="document.getElementById('200').style.backgroundColor = 'grey'" style="width:200px; height:200px; background-color: black"></div>
-    <p>150px square</p>
-    <div id="150" onclick="document.getElementById('150').style.backgroundColor = 'grey'" style="width:150px; height:150px; background-color: black"></div>
-    <p>125 px square</p>
-    <div id="125" onclick="document.getElementById('125').style.backgroundColor = 'grey'" style="width:125px; height:125px; background-color: black"></div>
-    <p>100 px square</p>
-    <div id="100" onclick="document.getElementById('100').style.backgroundColor = 'grey'" style="width:100px; height:100px; background-color: black"></div>
-    <p>75 px square</p>
-    <div id="75" onclick="document.getElementById('75').style.backgroundColor = 'grey'" style="width: 75px; height:75px; background-color: black"></div>
-    <p>60 px square</p>
-    <div id="60" onclick="document.getElementById('60').style.backgroundColor = 'grey'" style="width:60px; height:60px; background-color: black"></div>
-    <p>50 px square</p>
-    <div id="50" onclick="document.getElementById('50').style.backgroundColor = 'grey'" style="width:50px; height:50px; background-color: black"></div>
-    <p>40 px square</p>
-    <div id="40" onclick="document.getElementById('40').style.backgroundColor = 'grey'" style="width:40px; height:40px; background-color: black"></div>
-    <p>30 px square</p>
-    <div id="30" onclick="document.getElementById('30').style.backgroundColor = 'grey'" style="width:30px; height:30px; background-color: black"></div>
-    <div style="width:100vw; height:100vh; background-color:blue"></div>
-    <div style="width:1px; height:100px"></div>
+    <!-- box length and width must be at least 75 px long-->
+    
+
+    <canvas id="c" style="background-color: cornflowerblue; width:100vw; height:100vh"></canvas>
+    <p id="p1">
+        
+    </p>
+    <p id="p2">
+        
+    </p>
+    <script>
+        const canvas = document.getElementById("c");
+        const length = window.innerWidth
+        const width = window.innerHeight
+        document.getElementById("p1").innerHTML = length
+        document.getElementById("p2").innerHTML = width
+    </script>
 </body>
 </html>
