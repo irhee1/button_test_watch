@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Gamble watch game 😃</title>
+    <title>a</title>
     <style>
         body{
             margin: 0px;
@@ -18,6 +17,7 @@
     <canvas id="c" style="width:100vw; height:100vh; background-color: rgb(0, 102, 204);"></canvas>
     <script>
         const canvas = document.getElementById("c");
+        context = canvas.getContext('2d');
 
         const leng = window.innerWidth;
         const width = window.innerHeight;
@@ -25,17 +25,13 @@
         canvas.width = leng
         canvas.height = width 
 
-        const marginw = Math.floor((leng-950)/2); // Margin between boxes
-        const arrowbh = Math.floor((width-950)-(2 * marginw))
-        const arrowbw = Math.floor((leng-(3*marginw)) / 2)
-        const arrowbmh = (2*marginw)+950
-        const arrow2bmw = (marginw * 2) + arrowbw
-        context = canvas.getContext('2d');
+        const marginw = Math.floor((leng-960)/2); // Margin between boxes
+        
+        
         context.fillStyle='rgb(0, 128, 255)';
         
-        context.fillRect(marginw, marginw, 950, 550);
-        context.fillRect(marginw, arrowbmh, arrowbw, arrowbh)
-        context.fillRect(arrow2bmw, arrowbmh, arrowbw, arrowbh)
+        context.fillRect(marginw, marginw, 960, 600);
+        
     </script>
 </body>
 </html>
