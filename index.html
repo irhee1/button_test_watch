@@ -14,24 +14,24 @@
     <!-- box length and width must be at least 75 px long-->
     <!-- resolution = 980 * 741-->
 
-    <canvas id="c" style="width:100vw; height:100vh; background-color: rgb(0, 102, 204);"></canvas>
+    <canvas id="c" style="width:950px; height:650px; background-color: rgb(0, 102, 204); transform: translate(30px, 30px)"></canvas>
     <script>
         const canvas = document.getElementById("c");
         context = canvas.getContext('2d');
 
         const leng = window.innerWidth;
         const width = window.innerHeight;
-
+        /*
         canvas.width = leng
         canvas.height = width 
-
+        
         const marginw = Math.floor((leng-960)/2); // Margin between boxes
         
         
         context.fillStyle='rgb(0, 128, 255)';
         
         context.fillRect(marginw, marginw, 960, 600);
-        
+        */
     </script>
 </body>
 </html>
