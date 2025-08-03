@@ -14,14 +14,22 @@
     <!-- box length and width must be at least 75 px long-->
     <!-- resolution = 980 * 741-->
 
-    <canvas id="c" style="width:950px; height:700px; background-color: rgb(0, 102, 204); transform: translate(15px, 15px)"></canvas>
+    <canvas id="c" style="width:950px; height:700px; background-color: rgb(0, 102, 204); transform: translate(15px, 15px)">
+
+    </canvas>
     <script>
         const canvas = document.getElementById("c");
-        context = canvas.getContext('2d');
 
         const leng = window.innerWidth;
         const width = window.innerHeight;
         
+        canvas.width = leng
+        canvas.height = width
+        context = canvas.getContext('2d');
+
+        context.fillStyle = "blue"
+        context.font = '30px arial'
+        context.fillText(`${window.innerWidth} , ${window.innerHeight}`, 100, 100);
     </script>
 </body>
 </html>
